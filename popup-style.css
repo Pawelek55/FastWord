@@ -1,0 +1,125 @@
+/* black: rgb(51, 51, 51);
+dark Grey: rgb(127, 127, 127);
+grey: rgb(206, 206, 206);
+bright Grey: rgb(233, 233, 233);
+green: rgb(0, 158, 37)
+turkus: rgb(200, 235, 210) 
+orange: rgb(255, 117, 23)
+bright orange(255, 223, 201)*/
+
+
+
+html{
+  	border-left: 2px solid #fff;
+  	border-right: 2px solid #fff;
+}
+
+body{
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(233, 233, 233);
+	border-top: none;
+	border-bottom: none;
+}
+
+.body--dark{
+	background-color: rgb(51, 51, 51);
+	color: rgb(127,127,127);
+}
+
+.menuFW {
+	width: 280px;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 10px;
+}
+
+.menuFW__container{
+	padding: 10px 5px;
+}
+
+.buttons {
+	font-size: 25px;
+}
+
+.dailyweb {
+	font-size: 14px;
+}
+
+.switch--checkbox{
+	display: none;
+}
+
+.switch--label {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 15px;
+	padding-left: 25px;
+	position: relative;
+}
+
+.switch--label:before {
+	bottom: 1px;
+	color: #fff;
+	content: "";
+	display: inline-block;
+	height: 16px;
+	left: 0;
+	margin-right: 10px;
+	position: absolute;
+	text-align: center;
+	border: 1px solid #000;
+	width: 16px;
+	border-radius: 2px;
+}
+
+.switch--label-dark:before{
+	border: 1px solid rgb(127,127,127);
+}
+
+.switch--checkbox:checked + .switch--label:before {
+	content: "\2713";
+	font-size: 15px;
+	line-height: 15px;
+	background-color: rgb(0, 158, 37);
+	border-color: rgb(0, 158, 37);
+}
+
+.switch--checkbox:checked + .switch--label-dark:before {
+	content: "\2713";
+	font-size: 15px;
+	line-height: 15px;
+	background-color: rgb(255, 117, 23);
+	border-color: rgb(255, 117, 23);
+}
+
+
+.menuFW__stock--listContainer{
+	display: flex;
+	flex-direction: column;
+}
+
+.menuFW__stock--infoText{
+	font-size: 15px;
+	margin: 0;
+    text-align: center;
+}
+
+.menuFW__stock--listPair{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 14px;
+    padding-bottom: 4px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.menuFW__stock--listItems{	
+	padding: 0 2px;
+}
+
+.menuFW__stock--listItems:nth-child(even){
+	text-align: right;
+}

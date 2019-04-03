@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>FastWord</title>
+	<link rel="stylesheet" href="popup-style.css">
+	<script src="popup-script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="menuFW">
+		<div class="menuFW__container menuFW__switch-container">
+			<input id="switch--turnOnOff" class="switch--checkbox menuFW__switch--turnOnOff" type="checkbox">
+			<label for="switch--turnOnOff" class="switch--label">Włącz / wyłącz na obecnej karcie</label>
+		</div>
+		<div class="menuFW__container menuFW__switchAll-container">
+			<input id="switchAll--turnOnOff" class="switch--checkbox menuFW__switchAll--turnOnOff" type="checkbox">
+			<label for="switchAll--turnOnOff" class="switch--label">Włącz / wyłącz na wszystkich kartach</label>
+		</div>
+		<hr>
+		<div class="menuFW__container menuFW__stock">
+			<p class="menu--infoText menuFW__stock--infoText">Ostatnie tłumaczenia</p>
+			<div class="menuFW__stock--listContainer"></div>
+		</div>
+		<hr>
+		<div class="menuFW__container menuFW__change">
+			<input id="change--changeColor" class="switch--checkbox menuFW__change--changeColor" type="checkbox">
+			<label for="change--changeColor" class="switch--label">Zmień kolor</label>	
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "FastWord",
+  "short_name": "FW",
+	"author": "Paweł Zawiślak",
+	"version": "1.0",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon":  "img/FastWord_icon_32x32.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+    "css": ["style.css"],
+		"js": ["script.js"],
+		"matches": ["<all_urls>"]
+	}],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+  },
+	"permissions": [
+		"tabs",
+		"<all_urls>",
+		"storage",
+		"activeTab"
+	]
+}
